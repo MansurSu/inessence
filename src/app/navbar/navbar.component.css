@@ -1,0 +1,17 @@
+.navbar-center img {
+  max-height: 80px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-center img {
+    max-height: 50px;
+  }
+}
+
+.navbar-divider {
+  display: inline-block;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.3); /* Lichte grijze lijn */
+  margin: 0 40px;
+}
