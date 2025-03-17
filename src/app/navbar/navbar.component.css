@@ -1,17 +1,12 @@
-.navbar-center img {
-  max-height: 80px;
-  width: auto;
+.navbar-burger span {
+  background-color: black !important; /* Zorgt ervoor dat de lijnen zwart zijn */
 }
 
-@media (max-width: 768px) {
-  .navbar-center img {
-    max-height: 50px;
-  }
+.navbar-burger:hover span {
+  background-color: black !important; /* Zorgt ervoor dat de lijnen zwart blijven bij hover */
 }
 
-.navbar-divider {
-  display: inline-block;
-  width: 1px;
-  background-color: rgba(0, 0, 0, 0.3); /* Lichte grijze lijn */
-  margin: 0 40px;
+/* Wanneer het menu actief is (open), zorg dat de kruis-lijnen ook zwart zijn */
+.navbar-burger.is-active span {
+  background-color: black !important;
 }

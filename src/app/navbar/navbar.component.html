@@ -1,24 +1,78 @@
-<nav class="navbar is-warning px-5" style="background-color: #fbd886">
-  <div class="navbar-menu is-active" style="width: 100%">
-    <div class="navbar-start is-spaced">
-      <a class="navbar-item is-size-4">Bodywork</a>
-      <span class="navbar-divider"></span>
-      <a class="navbar-item is-size-4">Community work</a>
-      <span class="navbar-divider"></span>
-      <a class="navbar-item is-size-4">About</a>
-    </div>
-
-    <!-- Centraal logo -->
-    <div class="navbar-item is-expanded is-flex is-justify-content-center">
+<nav
+  class="navbar px-5"
+  style="background-color: #fbd886"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="navbar-brand">
+    <a [routerLink]="['/']" class="navbar-item">
       <img src="inessencefulllogo.jpg" alt="Logo" style="max-height: 70px" />
-    </div>
+    </a>
 
-    <div class="navbar-end is-spaced">
-      <a class="navbar-item is-size-4">Poetry</a>
+    <!-- Hamburger menu -->
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      [class.is-active]="isMenuActive"
+      (click)="toggleNavbar()"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div
+    id="navbarMenu"
+    class="navbar-menu"
+    [class.is-active]="isMenuActive"
+    style="background-color: #fbd886"
+  >
+    <div class="navbar-end is-spaced" style="background-color: #fbd886">
+      <a
+        [routerLink]="['/bodywork']"
+        routerLinkActive="is-active"
+        class="navbar-item is-size-4"
+        >Bodywork</a
+      >
       <span class="navbar-divider"></span>
-      <a class="navbar-item is-size-4">Herbal creations</a>
+      <a
+        [routerLink]="['/community']"
+        routerLinkActive="is-active"
+        class="navbar-item is-size-4"
+        >Community work</a
+      >
       <span class="navbar-divider"></span>
-      <a class="navbar-item is-size-4">Tattooing</a>
+      <a
+        [routerLink]="['/about']"
+        routerLinkActive="is-active"
+        class="navbar-item is-size-4"
+        >About</a
+      >
+      <span class="navbar-divider"></span>
+      <a
+        [routerLink]="['/poetry']"
+        routerLinkActive="is-active"
+        class="navbar-item is-size-4"
+        >Poetry</a
+      >
+      <span class="navbar-divider"></span>
+      <a
+        [routerLink]="['/herbal']"
+        routerLinkActive="is-active"
+        class="navbar-item is-size-4"
+        >Herbal creations</a
+      >
+      <span class="navbar-divider"></span>
+      <a
+        [routerLink]="['/tattoo']"
+        routerLinkActive="is-active"
+        class="navbar-item is-size-4"
+        >Tattooing</a
+      >
     </div>
   </div>
 </nav>
