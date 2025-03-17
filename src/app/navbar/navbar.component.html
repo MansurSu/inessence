@@ -1,12 +1,12 @@
 <nav
   class="navbar px-5"
-  style="background-color: #fbd886"
+  style="background-color: rgb(144, 55, 55)"
   role="navigation"
   aria-label="main navigation"
 >
   <div class="navbar-brand">
     <a [routerLink]="['/']" class="navbar-item">
-      <img src="inessencefulllogo.jpg" alt="Logo" style="max-height: 70px" />
+      <img src="inessenceNoBGpng.png" alt="Logo" style="max-height: 70px" />
     </a>
 
     <!-- Hamburger menu -->
@@ -29,9 +29,12 @@
     id="navbarMenu"
     class="navbar-menu"
     [class.is-active]="isMenuActive"
-    style="background-color: #fbd886"
+    style="background-color: rgb(144, 55, 55)"
   >
-    <div class="navbar-end is-spaced" style="background-color: #fbd886">
+    <div
+      class="navbar-end is-spaced"
+      style="background-color: rgb(144, 55, 55)"
+    >
       <a
         [routerLink]="['/bodywork']"
         routerLinkActive="is-active"

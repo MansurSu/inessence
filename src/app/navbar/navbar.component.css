@@ -1,12 +1,29 @@
+/* Alle navbar-items geel maken */
+.navbar-item {
+  color: rgb(255, 162, 0) !important;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover-effect voor contrast */
+.navbar-item:hover {
+  color: gold !important; /* Iets lichtere tint geel bij hover */
+  background-color: rgb(97, 37, 37) !important;
+}
+
+/* Actieve link ook geel laten */
+.navbar-item.is-active {
+  color: yellow !important;
+  font-weight: bold;
+}
 .navbar-burger span {
-  background-color: black !important; /* Zorgt ervoor dat de lijnen zwart zijn */
+  background-color: rgb(255, 162, 0) !important; /* Lijnen zwart */
 }
 
 .navbar-burger:hover span {
-  background-color: black !important; /* Zorgt ervoor dat de lijnen zwart blijven bij hover */
+  background-color: rgb(255, 162, 0) !important;
 }
 
-/* Wanneer het menu actief is (open), zorg dat de kruis-lijnen ook zwart zijn */
+/* Wanneer het menu actief is (open) → kruisje blijft zwart */
 .navbar-burger.is-active span {
-  background-color: black !important;
+  background-color: rgb(255, 162, 0) !important;
 }
