@@ -1,0 +1,11 @@
+.button.is-warning {
+  background-color: #e38d74; /* Button color */
+  border-color: #e1944c; /* Border color */
+  color: white; /* Text color */
+}
+
+.button.is-warning:hover {
+  background-color: #c6722d; /* Hover color */
+  border-color: #c6722d; /* Hover border color */
+  color: white; /* Text color on hover */
+}

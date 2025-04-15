@@ -1,1 +1,93 @@
-<p>bodywork works!</p>
+<app-navbar></app-navbar>
+
+<section
+  class="section"
+  style="
+    padding-top: 6rem; /* ruimte voor de navbar */
+    background: url('contact.jpg') no-repeat center center;
+    background-size: cover;
+  "
+>
+  <!-- Placeholder gray banner instead of video -->
+  <div
+    class="video-banner"
+    style="
+      background-color: rgba(100, 100, 100, 0.3);
+      height: 350px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    "
+  >
+    <div class="container has-text-centered">
+      <h1 class="title is-3 has-text-white">
+        Traditional Thai Massage at Inessence
+      </h1>
+      <p
+        class="subtitle is-6 has-text-white"
+        style="max-width: 650px; margin: 0 auto"
+      >
+        Experience full-body therapy rooted in ancient Thai traditions,
+        promoting healing and inner peace.
+      </p>
+    </div>
+  </div>
+
+  <!-- Contact / Booking -->
+  <div class="container mt-6" style="max-width: 600px">
+    <div class="box" style="background-color: #f4e4d4e6; border-radius: 12px">
+      <h2 class="title is-4" style="color: #3b2b20">Book an Appointment</h2>
+      <p style="color: #3b2b20">
+        You can reach us via email or phone. We’ll get back to you as soon as
+        possible!
+      </p>
+
+      <form>
+        <div class="field mt-4">
+          <label class="label" style="color: #3b2b20">Your Email</label>
+          <div class="control">
+            <input
+              class="input"
+              type="email"
+              placeholder="you@example.com"
+              style="border-radius: 6px"
+            />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" style="color: #3b2b20">Your Message</label>
+          <div class="control">
+            <textarea
+              class="textarea"
+              placeholder="Tell us what you’re looking for..."
+              style="border-radius: 6px"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="field mt-4">
+          <button
+            class="button"
+            style="
+              background-color: #e38d74;
+              color: white;
+              font-weight: 600;
+              border-radius: 6px;
+            "
+          >
+            Send Email
+          </button>
+        </div>
+
+        <hr />
+
+        <p style="color: #3b2b20; margin-top: 1rem">
+          Or call us directly: <strong>+32 456 789 123</strong>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

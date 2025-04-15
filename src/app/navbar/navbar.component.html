@@ -1,12 +1,13 @@
 <nav
-  class="navbar px-5"
-  style="background-color: rgb(144, 55, 55)"
+  class="navbar px-5 is-transparent"
+  [ngClass]="{ 'is-active': isMenuActive }"
   role="navigation"
   aria-label="main navigation"
+  style="position: absolute; top: 0; width: 100%; z-index: 10"
 >
   <div class="navbar-brand">
     <a [routerLink]="['/']" class="navbar-item">
-      <img src="inessenceNoBGpng.png" alt="Logo" style="max-height: 70px" />
+      <img src="inessenceNoBGpng.png" alt="Logo" style="max-height: 60px" />
     </a>
 
     <!-- Hamburger menu -->
@@ -21,7 +22,6 @@
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
     </a>
   </div>
 
@@ -29,52 +29,37 @@
     id="navbarMenu"
     class="navbar-menu"
     [class.is-active]="isMenuActive"
-    style="background-color: rgb(144, 55, 55)"
   >
-    <div
-      class="navbar-end is-spaced"
-      style="background-color: rgb(144, 55, 55)"
-    >
+    <div class="navbar-end">
       <a
         [routerLink]="['/bodywork']"
         routerLinkActive="is-active"
-        class="navbar-item is-size-4"
+        class="navbar-item nav-link"
         >Bodywork</a
       >
-      <span class="navbar-divider"></span>
       <a
         [routerLink]="['/community']"
         routerLinkActive="is-active"
-        class="navbar-item is-size-4"
+        class="navbar-item nav-link"
         >Community work</a
       >
-      <span class="navbar-divider"></span>
       <a
         [routerLink]="['/about']"
         routerLinkActive="is-active"
-        class="navbar-item is-size-4"
+        class="navbar-item nav-link"
         >About</a
       >
-      <span class="navbar-divider"></span>
       <a
         [routerLink]="['/poetry']"
         routerLinkActive="is-active"
-        class="navbar-item is-size-4"
+        class="navbar-item nav-link"
         >Poetry</a
       >
-      <span class="navbar-divider"></span>
       <a
         [routerLink]="['/herbal']"
         routerLinkActive="is-active"
-        class="navbar-item is-size-4"
+        class="navbar-item nav-link"
         >Herbal creations</a
-      >
-      <span class="navbar-divider"></span>
-      <a
-        [routerLink]="['/tattoo']"
-        routerLinkActive="is-active"
-        class="navbar-item is-size-4"
-        >Tattooing</a
       >
     </div>
   </div>

@@ -1,5 +1,11 @@
 @import "bulma/css/bulma.css";
 
 body {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Calibri", sans-serif;
+}
+.navbar-item:active,
+.navbar-item:focus {
+  background-color: transparent; /* Prevents the white background */
+  color: inherit; /* Keeps the text color consistent */
+  outline: none; /* Removes the focus outline */
 }

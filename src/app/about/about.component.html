@@ -1,82 +1,62 @@
-<section class="section">
+<app-navbar></app-navbar>
+
+<section
+  class="section"
+  style="
+    background-image: url('candle.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  "
+>
   <div class="container">
-    <div class="columns is-vcentered">
-      <!-- Foto van Ines -->
+    <div class="columns is-vcentered is-multiline">
+      <!-- Foto -->
       <div class="column is-5">
-        <figure class="image is-4by3">
-          <img src="assets/images/ines-govaerts.jpg" alt="Ines Govaerts" />
+        <figure class="image is-3by4">
+          <img
+            src="ines.jpeg"
+            alt="Ines Govaerts"
+            style="
+              border-radius: 12px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            "
+          />
         </figure>
       </div>
 
-      <!-- Tekst over Ines -->
-      <div class="column is-7">
-        <h1 class="title is-3">Meet Ines Govaerts</h1>
-        <p class="subtitle is-5">
-          Passionate about **bodywork, healing, and artistic expression**, Ines
-          has dedicated her life to the balance between **physical well-being
-          and creative energy**.
+      <!-- Tekst -->
+      <div
+        class="column is-7"
+        style="
+          padding: 2rem;
+          background-color: rgba(219, 156, 127, 0.4);
+          border-radius: 12px;
+          color: white;
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        "
+      >
+        <h1 class="title is-3 has-text-white">Meet Ines Govaerts</h1>
+        <p class="subtitle is-4 has-text-white">
+          Passionate about bodywork, healing, and artistic expression, Ines has
+          dedicated her life to the balance between physical well-being and
+          creative energy.
         </p>
-        <p>
-          From an early age, Ines was drawn to the power of **touch and
-          movement**, leading her to explore the ancient practice of **Thai
-          massage**. Over the years, she has blended this knowledge with
-          **herbal healing, poetry, and bodywork**, creating a holistic approach
-          that nurtures both body and soul.
+        <p class="subtitle is-5 has-text-white">
+          From an early age, Ines was drawn to the power of touch and movement,
+          leading her to explore the ancient practice of Thai massage. Over the
+          years, she has blended this knowledge with herbal healing, poetry, and
+          bodywork, creating a holistic approach that nurtures both body and
+          soul.
         </p>
-        <p>
-          Whether through the rhythm of **poetry**, the **grounding energy of
-          plant-based medicine**, or the deep connection of **body therapy**,
-          Ines seeks to create a space where healing and creativity come
-          together.
+        <p class="subtitle is-5 has-text-white">
+          Whether through the rhythm of poetry, the grounding energy of
+          plant-based medicine, or the deep connection of body therapy, Ines
+          seeks to create a space where healing and creativity come together.
         </p>
-      </div>
-    </div>
-
-    <!-- Extra content over haar werk -->
-    <div class="columns mt-6">
-      <!-- Thaise massage -->
-      <div class="column">
-        <div class="box has-text-centered">
-          <figure class="image is-3by2">
-            <img src="assets/images/thai-massage.jpg" alt="Thai Massage" />
-          </figure>
-          <h3 class="title is-4 mt-3">Thai Massage</h3>
-          <p>
-            A sacred practice that aligns the body and mind, restoring balance
-            and deep relaxation.
-          </p>
-        </div>
-      </div>
-
-      <!-- Herbal Creations -->
-      <div class="column">
-        <div class="box has-text-centered">
-          <figure class="image is-3by2">
-            <img
-              src="assets/images/herbal-creations.jpg"
-              alt="Herbal Creations"
-            />
-          </figure>
-          <h3 class="title is-4 mt-3">Herbal Creations</h3>
-          <p>
-            Harnessing the wisdom of nature, Ines crafts healing herbal remedies
-            to nourish body and spirit.
-          </p>
-        </div>
-      </div>
-
-      <!-- Poëzie & Expressie -->
-      <div class="column">
-        <div class="box has-text-centered">
-          <figure class="image is-3by2">
-            <img src="assets/images/poetry.jpg" alt="Poetry and Expression" />
-          </figure>
-          <h3 class="title is-4 mt-3">Poetry & Expression</h3>
-          <p>
-            Words that heal, inspire, and connect— poetry as a form of
-            self-discovery and empowerment.
-          </p>
-        </div>
       </div>
     </div>
   </div>
