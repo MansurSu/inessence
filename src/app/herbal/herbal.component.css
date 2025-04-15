@@ -1,0 +1,8 @@
+.section {
+  background-attachment: fixed;
+}
+
+img {
+  object-fit: cover;
+  max-height: 250px;
+}
